@@ -33,7 +33,7 @@ form .form-control {
   font-size: 20px;
 }
 
-button {
+#submit {
   background-color: #49274A;
   border: none;
   color: #F8EEE7;
