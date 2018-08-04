@@ -1,7 +1,10 @@
 var formTanggal = document.getElementById('form-tanggal');
 var answer = document.getElementById('horoscope');
 
-function checkTanggal() {
+formTanggal.addEventListener('submit', checkTanggal);
+
+function checkTanggal(event) {
+  event.preventDefault();
   switch(formTanggal.month.value) {
     case 'January':
       return cetakHoroscope('January');
@@ -28,15 +31,17 @@ function checkTanggal() {
     case 'December':
       return cetakHoroscope('December');
     default:
-      return invalidDate();
+      if (formTanggal.date.value === '') {
+        alert('Please Enter Date & Month!');
+      } else {
+        alert('Please Enter Month!')
+      }
   }
 }
 
 function cetakHoroscope(bulan) {
   if (formTanggal.date.value === '') {
-    return invalidDate();
-  } else if (formTanggal.date.value < 1 || formTanggal.date.value > 31) {
-    return invalidDate();
+    alert('Please Enter Date!');
   } else {
     switch(bulan) {
       case 'January':
