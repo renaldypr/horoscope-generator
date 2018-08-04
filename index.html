@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What's Your Horoscope?</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Ubuntu:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1>What's Your Horoscope?</h1>
+      <h2>Insert your birthday!</h2>
+      <form id='form-tanggal'>
+        <div class="form-group">
+          <label>Date:</label><br>
+          <input type="number" name="date" min="1" max="31" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Month:</label> <br>
+          <select name="month" class="form-control">
+            <option value="none"></option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select><br>
+        </div>
+        <!--<input type="submit" value="Submit!">-->
+        <button type="button" onclick="checkTanggal()">Submit!</button>
+      </form>
+      <div id="result">
+        <h2>You are:</h2>
+        <p id="horoscope">None</p>
+      </div>
+    </div>
+    <script src='script.js'></script>
+  </body>
+  <footer>
+    <ul>
+      <li>Renaldy Pratama © 2018</li>
+      <li><a target="_top" href="mailto:renaldy.pratama19@gmail.com" class="fa fa-envelope"></a></li>
+      <li><a target="_blank" href="https://twitter.com/renaldyp" class="fa fa-twitter"></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/renaldyp" class="fa fa-instagram"></a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/renaldy-pratama-118503b5" class="fa fa-linkedin"></a></li>
+      <li><a target="_blank" href="https://github.com/renaldypr" class="fa fa-github"></a></li>
+    </ul>
+  </footer>
+</html>
+

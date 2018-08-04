@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F4DECB;
+}
+
+
+h1 {
+  padding-top: 8%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration:none;
+}
+
+#form-tanggal {
+  width: 300px;
+  margin: 12px auto 8px auto;
+  padding-bottom: 30px;
+}
+
+form .form-control {
+  width: 300px;
+  font-size: 20px;
+}
+
+button {
+  background-color: #49274A;
+  border: none;
+  color: #F8EEE7;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 16px 33%;
+  cursor: pointer;
+  width: 100px;
+}
+
+#horoscope {
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 5%;
+}
+
+footer {
+  height: 70px;
+  background-color: black;
+  color: #F4DECB;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+footer ul{
+  list-style-type: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display:inline-block;
+  padding: 0 30px;
+  line-height: 70px;
+}
+
+footer .fa {
+  color: #F4DECB;
+  font-size: 20px;
+}
